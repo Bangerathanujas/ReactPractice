@@ -12,7 +12,7 @@ setStatus:function(){
 },
 
   render:function (){
-    //console.log(this.props.bd);
+  
     return(
       <div className="list-group-item">
 
@@ -23,7 +23,7 @@ setStatus:function(){
              </div>
              <div className="col-lg-4">
           <a href="#myViewModal" data-toggle="modal" data-target="#myViewModal"  onClick={this.changeStatus}>  {this.props.subject}{this.props.status} </a>
-          {this.state.status ? <Modalwindow b={this.props.bd} f={this.props.from} s={this.props.subject} c={this.setStatus}/> : null}
+          {this.state.status ? <Modalwindow b={this.props.bd} f={this.props.from} s={this.props.subject} d={this.props.date} c={this.setStatus}/> : null}
              </div>
              <div className="col-lg-4">
            {this.props.date}
